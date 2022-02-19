@@ -15,7 +15,7 @@ const showFiles = (files, parentSource, newDir) => {
       };
     } else {
       let identiferName = makeid(5);
-      el.innerHTML = `<img src="./../icon/file/folder.png" width="15">&nbsp;<span>${file.name}</span><ul class="child ${identiferName}"></ul>`;
+      el.innerHTML = `<img src="./../icon/file/folder.ico" width="15">&nbsp;<span>${file.name}</span><ul class="child ${identiferName}"></ul>`;
 
       el.className = `folder`;
       el.onclick = function (event) {

@@ -40,9 +40,7 @@ function createWindow() {
     loadViewFile();
   });
 
-  ipcMain.on("terminal.keystroke", (event, key) => {
-    ptyProcess.write(key);
-  });
+
 
   mainWindow.webContents.openDevTools();
   mainWindow.on("closed", () => {

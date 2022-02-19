@@ -73,5 +73,10 @@
         "type":".tsx",
         "icon":"./../icon/file/tsx.png",
         "mime_type":"application/typescript"
+    },
+    {
+        "type":".scss",
+        "icon":"./../icon/file/sass.png",
+        "mime_type":"text/x-scss"
     }
 ]

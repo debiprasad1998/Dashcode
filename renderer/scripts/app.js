@@ -1,5 +1,6 @@
 const { ipcRenderer } = require("electron");
 let activeFiles =[];
+let terminalOpen=false;
 
 ipcRenderer.on("files", (event, data) => {
    

@@ -21,6 +21,8 @@
 .explorer-list{
     width: 100%;
     overflow: auto;
+    background: #0f192a;
+    color: #e1e1bb;
     
 }
 .explorer-list .file-list{

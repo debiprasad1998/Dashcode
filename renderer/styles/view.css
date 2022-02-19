@@ -13,7 +13,7 @@
     position: absolute;
 }
 #terminal{
-    height: 40vh;
+    
     width: 100%;
     background: white;
     border-top: 1px solid gray;
@@ -25,6 +25,7 @@
 }
 #terminal .xterm .xterm-viewport{
     width: 100% !important;
+
 }
 #terminal .xterm .xterm-viewport .xterm-screen{
     width: 100% !important;
