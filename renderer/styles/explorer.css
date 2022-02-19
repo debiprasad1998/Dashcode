@@ -1,0 +1,63 @@
+.explorer-item{
+    height: 100%;
+    width: 20%;
+    background: black;
+    color: white;
+
+
+}
+.explorer-item ul{
+    height: 100%;
+}
+.explorer-item ul li{
+    text-align: center;
+    height: 10%;
+}
+.explorer-item ul li i{
+    font-size: 30px;
+    margin-top: 2rem;
+    
+}
+.explorer-list{
+    width: 100%;
+    overflow: auto;
+    
+}
+.explorer-list .file-list{
+    width: 100%;
+    overflow: auto;
+    list-style: none;
+}
+.explorer-item .file-list::-webkit-scrollbar {
+    width: 2px;
+}
+.explorer-item .file-list::-webkit-scrollbar-button {
+    background: #ccc
+}
+.explorer-item .file-list::-webkit-scrollbar-track-piece {
+    background: #888
+}
+.explorer-item .file-list::-webkit-scrollbar-thumb {
+    background: #eee
+}
+.explorer-list .file-list li{
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+/* .explorer-list .file-list .folder:hover{
+    background: lightblue;
+} */
+.explorer-list .file-list .child{
+    margin-left: 15px;
+    list-style: none;
+    border-left: 1px solid #17a2b8;
+    padding-left: 5px;
+}
+.active{
+    background: lightblue;
+}
+
+
+
