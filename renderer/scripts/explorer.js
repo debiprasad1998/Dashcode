@@ -15,7 +15,7 @@ const showFiles = (files, parentSource, newDir) => {
       };
     } else {
       let identiferName = makeid(5);
-      el.innerHTML = `<img src="./../icon/file/folder.ico" width="15">&nbsp;<span>${file.name}</span><ul class="child ${identiferName}"></ul>`;
+      el.innerHTML = `<img src="./../icon/file/folder.ico" width="20">&nbsp;<span>${file.name}</span><ul class="child ${identiferName}"></ul>`;
 
       el.className = `folder`;
       el.onclick = function (event) {
@@ -75,4 +75,24 @@ function makeid(length) {
     result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
   return result;
+}
+function resizeStart(event)
+{
+  resizing=true;
+  document.addEventListener('mouseup',()=>{
+    this.resizing=false;
+    
+  })
+}
+
+
+function resize(event)
+{
+
+  if(resizing)
+  {
+   
+    document.querySelector('.explorer-list').style.width= `${event.pageX-30}px`;
+  }
+ 
 }
